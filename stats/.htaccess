@@ -1,0 +1,7 @@
+AuthName "reservas.cparaiso.com.br statistics"
+AuthType Basic
+AuthUserFile /home/reservas/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

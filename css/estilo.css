@@ -1,0 +1,280 @@
+/*Configurações gerais*/
+*{
+	padding: 0;
+	margin:0;
+}
+
+
+/*Fontes Personalizadas*/
+
+@font-face{
+	font-family: "dosis-regular";
+	src: url(../fontes/Dosis/static/Dosis-Regular.ttf);
+}
+@font-face{
+	font-family: "dosis-bold";
+	src: url(../fontes/Dosis/static/Dosis-Bold.ttf);
+}
+@font-face{
+	font-family: "open-sans-regular";
+	src: url(../fontes/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: "open-sans-bold";
+	src: url(../fontes/Open_Sans/OpenSans-Bold.ttf);
+}
+@font-face{
+	font-family: "open-sans-light";
+	src: url(../fontes/Open_Sans/OpenSans-Light.ttf);
+}
+
+a{
+	text-decoration: none;
+	color: #2F3C43;
+}
+
+/*Scrool na tabela de livros vinculados*/
+.table-overflow {
+	max-height:400px;
+	overflow-x:auto;
+}
+
+/*Cores Padrão para fontes e icones*/
+.rosa{
+	color: #EA77AD;
+}
+.salmao{
+	color: #EC7F76;
+}
+.amarelo{
+	color:#F0C24B;
+}
+.verde{
+	color:#CCD56A;
+}
+.lilas{
+	color: #A597E7;
+}
+.azul{
+	color: #84BED6;
+}
+.azul-escuro{
+	color: #2F3C43;
+}
+
+/*Cores Padrão para Backgrounds*/
+
+.bg-rosa{
+	background-color: #EA77AD;
+}
+.bg-salmao{
+	background-color: #EC7F76;
+}
+.bg-amarelo{
+	background-color:#f4ea89;
+}
+.bg-verde{
+	background-color:#CCD56A;
+}
+.bg-lilas{
+	background-color: #A597E7;
+}
+.bg-azul{
+	background-color: #84BED6;
+}
+.bg-azul-escuro{
+	background-color: #2F3C43;
+}
+.bg-cinza{
+	background-color: #cbd5db;
+}
+.bg-vermelho-claro{
+	background-color: rgb(232, 104, 104);
+}
+.bg-verde-claro{
+	background-color: #52b788;
+}
+
+/*Fontes*/
+
+.font-titulos{
+	font-family: 'dosis-regular';
+}
+.font-titulos-negrito{
+	font-family: 'dosis-bold';
+}
+
+.font-textos{
+	font-family: 'open-sans-regular';
+}
+
+/*Centralizando todos os modais*/
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+/*Index*/
+
+#logo{
+	width: 130px;
+	margin:10px;
+}
+
+#box-central{
+	width: 80%;
+	height: 80%;
+}
+
+/*Estilo botões de ADD*/
+.botoes-ver{
+	color: #fff;
+	font-size: 15pt;
+	background-color: #84BED6;
+	padding: 8px;
+	border-radius: 3px;
+	margin:0;
+}
+.botoes-ver:hover{
+	color: #2F3C43;
+	font-size: 15pt;
+}
+.botoes-editar{
+	color: #fff;
+	font-size: 15pt;
+	background-color: #EC7F76;
+	padding: 8px;
+	border-radius: 3px;
+	margin:0;
+}
+.botoes-editar:hover{
+	color:#2F3C43;
+	font-size: 15pt;
+}
+.botoes-baixa{
+	color: #fff;
+	font-size: 15pt;
+	background-color: #A597E7;
+	padding: 8px;
+	border-radius: 3px;
+	margin:0;
+}
+.botoes-baixa:hover{
+	color:#2F3C43;
+	font-size: 15pt;
+}
+
+/*Home Cliente*/
+
+
+
+/*Reservas Lojinha*/
+#box-btn-esquerda{
+	padding-left: 0;
+	padding-right: 3px;
+}
+
+#box-btn-direita{
+	padding-left: 3px;
+	padding-right: 0;
+}
+
+#btn-consultar-reservas{
+	margin-top: 30px;
+}
+#btn-ver-reservas{
+	margin-top: 30px;
+}
+
+
+/*Reservas Cliente*/
+
+/*Criando borda interna branca*/
+.box-reservas{
+	border-style: solid;
+	border-color: #fff; /* cor da borda mesmo, que fica por fora de tudo */
+	border-width: 2px; /* espessura das bordas */
+	padding: 0 2px 2px 2px; /* aqui que você vai conseguir o efeito de "borda interna */
+	margin-bottom: 10px;
+}
+
+.c-modal{
+	width:400px;
+}
+.c-modal-medio{
+	width:100%;
+}
+.c-modal-confirmacao{
+	width:480px;
+}
+.c-modal-reservas{
+	width:450px;
+}
+
+.modal-dialog {
+	width: 100%;
+	padding: 0;
+}
+
+.modal-content {
+	height: 100%;
+	border-radius: 0;
+}
+/*Responsividade*/
+@media screen and (max-width: 767px) {
+
+	#c-modal{
+		width: 100%;
+	}
+
+	.c-modal-confirmacao{
+		width:280px;
+	}
+	.c-modal-reservas{
+		width:300px;
+	}
+
+	#btn-consultar-reservas{
+		margin-top: 10px;
+	}
+	#btn-ver-reservas{
+		margin-top: 10px;
+	}
+	/*Reservas Lojinha*/
+	#box-btn-esquerda{
+		padding: 0;
+	}
+
+	#box-btn-direita{
+		padding: 0;
+	}
+
+
+}
+@media screen and (max-width: 480px) {
+
+	/*Reservas Lojinha*/
+	#box-btn-esquerda{
+		padding: 0 10px 0 0;
+	}
+
+	#box-btn-direita{
+		padding: 0;
+	}
+
+
+}
